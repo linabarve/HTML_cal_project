@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <center>
+        <h1>Calculator</h1>
+
+    </center>
+    
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: greenyellow;
+        }
+
+        .wrap {
+            width: 400px;
+            margin: auto;
+            height: auto;
+            background: black;
+            padding: 15px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        input[type=button] {
+            width: 89px;
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        #del {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <center>
+            <form name="calculator">
+                <input type="text" name="display">
+                <br><br>
+                <input type="button" value="9" onclick="document.forms.calculator.display.value += '9'">
+                <input type="button" value="8" onclick="document.forms.calculator.display.value += '8'">
+                <input type="button" value="7" onclick="document.forms.calculator.display.value += '7'">
+                <input type="button" value="+" onclick="document.forms.calculator.display.value += '+'">
+                <br><br>
+                <input type="button" value="6" onclick="document.forms.calculator.display.value += '6'">
+                <input type="button" value="5" onclick="document.forms.calculator.display.value += '5'">
+                <input type="button" value="4" onclick="document.forms.calculator.display.value += '4'">
+                <input type="button" value="-" onclick="document.forms.calculator.display.value += '-'">
+                <br><br>
+                <input type="button" value="3" onclick="document.forms.calculator.display.value += '3'">
+                <input type="button" value="2" onclick="document.forms.calculator.display.value += '2'">
+                <input type="button" value="1" onclick="document.forms.calculator.display.value += '1'">
+                <input type="button" value="*" onclick="document.forms.calculator.display.value += '*'">
+                <br><br>
+                <input type="button" value="0" onclick="document.forms.calculator.display.value += '0'">
+                <input type="button" value="/" onclick="document.forms.calculator.display.value += '/'">
+                <input type="button" value="=" onclick="document.forms.calculator.display.value = eval(document.forms.calculator.display.value)">
+                <input type="button" value="%" onclick="document.forms.calculator.display.value += '%'">
+                <input type="button" value="c" onclick="document.forms.calculator.display.value = ''" style="width: 90px;">
+                <input type="button" value="Delete" onclick="document.forms.calculator.display.value = document.forms.calculator.display.value.slice(0, -1)">
+            </form>
+        </center>
+    </div>
+</body>
+
+</html>
+
